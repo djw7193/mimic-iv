@@ -1,16 +1,16 @@
 -----------------------------------------
--- Load data into the MIMIC-IV schemas --
+-- Load data into the mimic schemas --
 -----------------------------------------
 
 
--- core schema
+-- mimic_core schema
 \cd :mimic_data_dir/core
 
 \COPY mimic_core.admissions FROM PROGRAM 'gzip -dc admissions.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_core.patients FROM PROGRAM 'gzip -dc patients.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_core.transfers FROM PROGRAM 'gzip -dc transfers.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 
--- hosp schema
+-- mimic_hosp schema
 \cd :mimic_data_dir/hosp
 
 \COPY mimic_hosp.d_hcpcs FROM PROGRAM 'gzip -dc d_hcpcs.csv.gz' DELIMITER ',' CSV HEADER NULL '';
@@ -31,7 +31,7 @@
 \COPY mimic_hosp.procedures_icd FROM PROGRAM 'gzip -dc procedures_icd.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.services FROM PROGRAM 'gzip -dc services.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 
--- icu schema
+-- mimic_icu schema
 \cd :mimic_data_dir/icu
 
 \COPY mimic_icu.chartevents FROM PROGRAM 'gzip -dc chartevents.csv.gz' DELIMITER ',' CSV HEADER NULL '';
