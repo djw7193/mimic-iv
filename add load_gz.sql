@@ -1,5 +1,5 @@
 -----------------------------------------
--- Load data into the mimic schemas --
+-- Load data into the mimiciv schemas --
 -----------------------------------------
 
 
