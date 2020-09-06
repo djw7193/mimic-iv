@@ -12,8 +12,8 @@
 \COPY mimic_hosp.d_hcpcs FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\d_hcpcs.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.diagnoses_icd FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\diagnoses_icd.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.d_icd_diagnoses FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\d_icd_diagnoses.csv.gz' DELIMITER ',' CSV HEADER NULL '';
-\COPY mimic_hosp.d_icd_procedures FROM program '7z e -so D:\MIMIC-IV\mimic\hosp\d_icd_procedures.csv.gz' DELIMITER ',' CSV HEADER NULL '';
-\COPY mimic_hosp.d_labitems FROM program '7z e -so D:\MIMIC-IV\mimic\hosp\d_labitems.csv.gz' DELIMITER ',' CSV HEADER NULL '';
+\COPY mimic_hosp.d_icd_procedures FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\d_icd_procedures.csv.gz' DELIMITER ',' CSV HEADER NULL '';
+\COPY mimic_hosp.d_labitems FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\d_labitems.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.drgcodes FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\drgcodes.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.emar_detail FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\emar_detail.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.emar FROM program '7z e -so D:\mi\mimic-iv-0.4\emar.csv.gz' DELIMITER ',' CSV HEADER NULL '';
