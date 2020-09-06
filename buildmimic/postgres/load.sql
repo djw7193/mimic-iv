@@ -16,7 +16,7 @@
 \COPY mimic_hosp.d_labitems FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\d_labitems.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.drgcodes FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\drgcodes.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.emar_detail FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\emar_detail.csv.gz' DELIMITER ',' CSV HEADER NULL '';
-\COPY mimic_hosp.emar FROM program '7z e -so D:\mi\mimic-iv-0.4\emar.csv.gz' DELIMITER ',' CSV HEADER NULL '';
+\COPY mimic_hosp.emar FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\emar.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.hcpcsevents FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\hcpcsevents.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.labevents FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\labevents.csv.gz' DELIMITER ',' CSV HEADER NULL '';
 \COPY mimic_hosp.microbiologyevents FROM program '7z e -so D:\mi\mimic-iv-0.4\hosp\microbiologyevents.csv.gz' DELIMITER ',' CSV HEADER NULL '';
