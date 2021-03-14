@@ -24,7 +24,7 @@ with co as
         , stay_id
         , intime AS starttime
         , DATETIME_ADD(intime, INTERVAL '24' HOUR) AS endtime
-    from `physionet-data.mimic_icu.icustays` ie
+    from 'physionet-data.mimic_icu.icustays' ie
 )
 , cpap as
 (
